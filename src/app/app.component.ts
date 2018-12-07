@@ -5,7 +5,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { ContactPage } from '../pages/contact/contact';
 import { ProjetsPage } from './../pages/projets/projets';
 
@@ -26,7 +25,7 @@ export class MyApp {
     this.pages = [
       { title: 'Accueil', component: HomePage },
       { title: 'Mes projets', component: ProjetsPage },
-      { title: 'Blog', component: BlogPage },
+      { title: 'Ateliers', component: BlogPage },
       { title: 'Contact', component: ContactPage }
     ];
 

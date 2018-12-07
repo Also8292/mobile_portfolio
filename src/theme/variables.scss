@@ -14,7 +14,11 @@ $app-direction: ltr;
 
 @import "ionic.globals";
 
+@import "dark-theme.scss";
 
+.scroll-content {
+  top: 35px;
+}
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override

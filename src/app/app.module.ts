@@ -1,3 +1,5 @@
+import { SettingPage } from './../pages/setting/setting';
+import { MoreOptionComponent } from './../components/more-option/more-option';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -23,7 +25,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProjetsPage,
     ProjetPage,
     BlogPage,
-    ArticlePage
+    ArticlePage,
+    MoreOptionComponent,
+    SettingPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProjetsPage,
     ProjetPage,
     BlogPage,
-    ArticlePage
+    ArticlePage,
+    SettingPage
   ],
   providers: [
     StatusBar,

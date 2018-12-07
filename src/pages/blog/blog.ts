@@ -16,8 +16,9 @@ import { ArticlePage } from './article/article';
   templateUrl: 'blog.html',
 })
 export class BlogPage {
-
+  title: string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.title = "Ateliers";
   }
 
   ionViewDidLoad() {
