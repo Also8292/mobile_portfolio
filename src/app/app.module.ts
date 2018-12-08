@@ -1,4 +1,3 @@
-import { SettingPage } from './../pages/setting/setting';
 import { MoreOptionComponent } from './../components/more-option/more-option';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -7,11 +6,12 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import { ContactPage } from '../pages/contact/contact';
 import { ProjetsPage } from '../pages/projets/projets';
 import { ProjetPage } from '../pages/projets/projet/projet';
 import { BlogPage } from './../pages/blog/blog';
 import { ArticlePage } from '../pages/blog/article/article';
+import { AboutPage } from './../pages/about/about';
+import { SettingPage } from './../pages/setting/setting';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,13 +21,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    ContactPage,
     ProjetsPage,
     ProjetPage,
     BlogPage,
     ArticlePage,
     MoreOptionComponent,
-    SettingPage
+    SettingPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -38,12 +38,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ListPage,
-    ContactPage,
     ProjetsPage,
     ProjetPage,
     BlogPage,
     ArticlePage,
-    SettingPage
+    SettingPage,
+    AboutPage
   ],
   providers: [
     StatusBar,

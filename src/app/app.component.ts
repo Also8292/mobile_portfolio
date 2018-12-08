@@ -1,3 +1,4 @@
+import { AboutPage } from './../pages/about/about';
 import { BlogPage } from './../pages/blog/blog';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -5,7 +6,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ContactPage } from '../pages/contact/contact';
 import { ProjetsPage } from './../pages/projets/projets';
 
 @Component({
@@ -24,9 +24,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Accueil', component: HomePage },
-      { title: 'Mes projets', component: ProjetsPage },
-      { title: 'Ateliers', component: BlogPage },
-      { title: 'Contact', component: ContactPage }
+      { title: 'Portfolio', component: ProjetsPage },
+      { title: 'Articles', component: BlogPage },
+      { title: 'A propos', component: AboutPage }
     ];
 
   }
@@ -41,8 +41,6 @@ export class MyApp {
   }
 
   openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
 }

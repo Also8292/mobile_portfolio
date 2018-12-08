@@ -17,8 +17,8 @@ export class ProjetPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProjetPage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad ProjetPage');
+  // }
 
 }

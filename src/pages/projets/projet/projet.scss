@@ -1,8 +1,8 @@
 page-projet {
-    .project_slide {
-        // margin-top: -85px;
+    .scroll-content {
+        overflow: hidden;
     }
-    .swiper-pagination {
-        // top: 360px;
+    .slide-content {
+        overflow: scroll;
     }
 }

@@ -1,3 +1,4 @@
+import { AboutPage } from './../about/about';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 
@@ -15,7 +16,7 @@ import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-an
 })
 export class SettingPage {
 
-  constructor(public loadingCtrl: LoadingController) {
+  constructor(public loadingCtrl: LoadingController, public navCtrl: NavController) {
   }
 
   // ionViewDidLoad() {
@@ -29,8 +30,8 @@ export class SettingPage {
   //   });
   //   loader.present();
   // }
-  themeChange() {
-    alert('Hello Also');
+  goToAbout() {
+    this.navCtrl.push(AboutPage);
   }
 
 }
