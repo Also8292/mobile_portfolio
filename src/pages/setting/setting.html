@@ -3,46 +3,28 @@
 </ion-content> -->
 
 <ion-content>
-    <ion-list radio-group>
-        <ion-list-header>
-          Langue
-        </ion-list-header>
-    
-        <ion-item>
-          <ion-label>Français</ion-label>
-          <ion-radio checked="true" value="go"></ion-radio>
-        </ion-item>
-    
-        <ion-item>
-          <ion-label>Anglais</ion-label>
-          <ion-radio value="rust"></ion-radio>
-        </ion-item>
-    
-        <!-- <ion-item>
-          <ion-label>Python</ion-label>
-          <ion-radio value="python" disabled="true"></ion-radio>
-        </ion-item> -->
-      </ion-list>
-  <ion-list radio-group>
-    <ion-list-header>
-      Theme
-    </ion-list-header>
-
+  <ion-list>
     <ion-item>
-      <ion-label>light</ion-label>
-      <ion-radio checked="true" value="go"></ion-radio>
+      <ion-label>Langue</ion-label>
+      <ion-select><!--  [(ngModel)]="langue" -->
+        <ion-option value="anglais">Anglais</ion-option>
+        <ion-option value="français" selected>Français</ion-option>
+      </ion-select>
     </ion-item>
-
-    <ion-item>
-      <ion-label>dark</ion-label>
-      <ion-radio value="rust"></ion-radio>
-    </ion-item>
-
-    <!-- <ion-item>
-      <ion-label>Python</ion-label>
-      <ion-radio value="python" disabled="true"></ion-radio>
-    </ion-item> -->
   </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Theme</ion-label>
+      <ion-select><!--  [(ngModel)]="theme" -->
+        <ion-option value="clair" selected>Clair</ion-option>
+        <ion-option value="sombre">Sombre</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+
 </ion-content>
 
 <ion-footer>

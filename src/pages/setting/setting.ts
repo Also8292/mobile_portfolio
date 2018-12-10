@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-an
 })
 export class SettingPage {
 
+  
   constructor(public loadingCtrl: LoadingController, public navCtrl: NavController) {
   }
 
